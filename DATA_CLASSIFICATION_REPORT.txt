@@ -1,0 +1,20 @@
+######################################################################################################################################
+DATA CLASSIFICATION REPORT FOR THE GIVEN DATA -  ANALYSIS OF AIR QUALITY IN CHENNAI
+TOTAL_DAYS :366
+SYSTEM_WORKING_DAYS :205
+HARDWARE_ACCURACY :56.01092896174863
+POLLUTED_DAYS :75
+NOT_POLLUTED_DAYS :130
+######################################################################################################################################
+FILE LOCATION OF CLASSFIED DATA :
+D:\Mini-Project\Chennai\Final\masterdataaqi_clean.csv
+
+FILE LOCATION OF POLLUTED DATA :
+D:\Mini-Project\Chennai\Final\polluted_data.csv
+
+FILE LOCATION OF UN-POLLUTED DATA :
+D:\Mini-Project\Chennai\Final\not_polluted_data.csv
+######################################################################################################################################
+# 1== > Polluted
+# 0 ==> Not Polluted
+######################################################################################################################################
