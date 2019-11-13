@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Please Fill Details:</h2>
+  <form id = "upload-form" action = "{{url_for('predict')}}" method = "POST" enctype = "multipart/form-data">  
+    <div class="form-group">
+      <label for="firstname">Name:</label>
+      <input type="text" class="form-control" id="firstname" placeholder="Enter Name" name="firstname">
+    </div>
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input type="number" class="form-control" id="number" placeholder="Enter Number" name="number">
+    </div>
+    <button type="submit" class="btn btn-default">Search</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+

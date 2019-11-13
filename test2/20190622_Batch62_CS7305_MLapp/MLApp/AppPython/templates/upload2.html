@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Upload Data</title>
+  </head>
+
+  <center>	    
+  <body>      
+    <br>
+    <br>
+    <h1> Upload data as .csv file to predict</h1>
+    <br>
+
+ <!--    <form>   First name:<br>   <input type="text" name="firstname"><br>   Last name:<br>   <input type="text" name="lastname"> </form>
+ -->
+    <form id = "upload-form" action = "{{url_for('predict')}}" method = "POST" enctype = "multipart/form-data">
+      First name:<br>   <input type="text" name="firstname"><br>   Last name:<br>   <input type="number" name="lastname">
+      <!-- <input type = "file" name = "file" accept=".csv"> -->
+        <br>
+        <br>
+        <br>
+        <br>
+      <!-- <h1>Select only one Checkbox and click Predict button</h1> -->
+      <br>
+<!--       <div class="checkboxes">
+        <label>
+          <input type="checkbox" name="Download"> <span>Download</span>		
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="Display"> <span>Display</span>
+        </label>
+      </div>
+ -->          <br>
+      <input type = "submit" value="Search" >
+      </form> 
+  </body>
+  </center>
+    
+</html>
+
+
+

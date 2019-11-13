@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<div class="container">    
+<table class="table table-hover">
+  <thead>
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+    </tr></thead> 
+  <tbody>
+      {% for data in output_result %}
+    <tr>
+      <td>{{data['name']}}</td>
+      <td>{{data['number']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+        
+        

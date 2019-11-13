@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  mysql:
+    build : ./AppMySQL
+    container_name: App_MySQL
+    volumes:
+      - ./AppMySQL/:/AppMySQL
+    ports:
+      - "3306:3306"
+    #command: mysql -u root -pinsofe cust_db < cust_data.dump
+
+  python:
+    build: ./AppPython
+    container_name: App_Python
+    volumes: 
+      - ./AppPython/:/AppPython
+    ports:
+      - "1234:1234"
+    command: jupyter notebook --no-browser --ip=0.0.0.0 --port=1234 --allow-root
+    depends_on:
+      - mysql
